@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #eaf3f7;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header h1 {
+  text-transform: uppercase;
+  color: #33c273;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75vh;
+}
+
+.time-wrapper {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0 3px 6px #888888;
+}
+
+.time-wrapper h2 {
+  text-align: right;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #7a7a7a;
+}
+
+.time-wrapper h3 {
+  text-align: center;
+  font-size: 7rem;
+  color: #6dffac;
+  font-weight: 400;
+}
+
+.controls-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.controls-wrapper button {
+  font-size: 3rem;
+  display: block;
+  border: none;
+  background-color: transparent;
+  color: #7a7a7a;
+}
+
+.timeset-wrapper {
+  margin: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeset-wrapper .control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeset-wrapper .control h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #7a7a7a;
+  margin-bottom: 1rem;
+}
+
+.timeset-wrapper .control h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #7a7a7a;
+}
+
+.timeset-wrapper .control button {
+  border: none;
+  background-color: transparent;
+  color: #33c273;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+}
